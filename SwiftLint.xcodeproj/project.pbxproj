@@ -1954,7 +1954,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${SRCROOT}/Carthage/Build/iOS/ScopeAgent.framework/upload_symbols\n";
+			shellScript = "${SRCROOT}/Carthage/Build/Mac/ScopeAgent.framework/upload_symbols\n";
 		};
 		6CCFCF321CFEF768003239EB /* Embed Swift libraries into SwiftLintFramework.framework */ = {
 			isa = PBXShellScriptBuildPhase;

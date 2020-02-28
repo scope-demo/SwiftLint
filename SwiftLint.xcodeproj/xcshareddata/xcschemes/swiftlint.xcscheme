@@ -35,7 +35,7 @@
             <ActionContent
                title = "Run Script"
                scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;"
-               shellToInvoke = "${SRCROOT}/Carthage/Build/iOS/ScopeAgent.framework/scope-coverage">
+               shellToInvoke = "${SRCROOT}/Carthage/Build/Mac/ScopeAgent.framework/scope-coverage">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
