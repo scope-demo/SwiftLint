@@ -1,3 +1,4 @@
+binary "https://releases.undefinedlabs.com/scope/agents/carthage/ScopeAgent.json" "0.5.6"
 github "Carthage/Commandant" "0.17.0"
 github "drmohundro/SWXMLHash" "5.0.1"
 github "jpsim/SourceKitten" "0.29.0"

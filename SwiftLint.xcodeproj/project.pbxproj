@@ -136,6 +136,8 @@
 		62DADC481FFF0423002B6319 /* PrefixedTopLevelConstantRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DADC471FFF0423002B6319 /* PrefixedTopLevelConstantRule.swift */; };
 		62DEA1661FB21A9E00BCCCC6 /* PrivateActionRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DEA1651FB21A9E00BCCCC6 /* PrivateActionRule.swift */; };
 		62FE5D32200CABDD00F68793 /* DiscouragedOptionalCollectionExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FE5D30200CAB6E00F68793 /* DiscouragedOptionalCollectionExamples.swift */; };
+		665E015324090591009C34E5 /* ScopeAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665E015224090591009C34E5 /* ScopeAgent.framework */; };
+		665E015B2409085D009C34E5 /* ScopeAgent.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 665E015224090591009C34E5 /* ScopeAgent.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		67932E2D1E54AF4B00CB0629 /* CyclomaticComplexityConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67932E2C1E54AF4B00CB0629 /* CyclomaticComplexityConfigurationTests.swift */; };
 		67EB4DFA1E4CC111004E9ACD /* CyclomaticComplexityConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EB4DF81E4CC101004E9ACD /* CyclomaticComplexityConfiguration.swift */; };
 		67EB4DFC1E4CD7F5004E9ACD /* CyclomaticComplexityRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EB4DFB1E4CD7F5004E9ACD /* CyclomaticComplexityRuleTests.swift */; };
@@ -488,6 +490,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		665E015A2409082E009C34E5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				665E015B2409085D009C34E5 /* ScopeAgent.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6CCFCF291CFEF6D3003239EB /* Embed Frameworks into SwiftLintFramework.framework */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -649,6 +661,7 @@
 		62E54FED1F93AD57005B367B /* QuickDiscouragedFocusedTestRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickDiscouragedFocusedTestRule.swift; sourceTree = "<group>"; };
 		62FE5D30200CAB6E00F68793 /* DiscouragedOptionalCollectionExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscouragedOptionalCollectionExamples.swift; sourceTree = "<group>"; };
 		65454F451B14D73800319A6C /* ControlStatementRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlStatementRule.swift; sourceTree = "<group>"; };
+		665E015224090591009C34E5 /* ScopeAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScopeAgent.framework; path = Carthage/Build/Mac/ScopeAgent.framework; sourceTree = "<group>"; };
 		67932E2C1E54AF4B00CB0629 /* CyclomaticComplexityConfigurationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CyclomaticComplexityConfigurationTests.swift; sourceTree = "<group>"; };
 		67EB4DF81E4CC101004E9ACD /* CyclomaticComplexityConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CyclomaticComplexityConfiguration.swift; sourceTree = "<group>"; };
 		67EB4DFB1E4CD7F5004E9ACD /* CyclomaticComplexityRuleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CyclomaticComplexityRuleTests.swift; sourceTree = "<group>"; };
@@ -1018,6 +1031,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0D1217819E87B05005E4BAA /* SwiftLintFramework.framework in Frameworks */,
+				665E015324090591009C34E5 /* ScopeAgent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1128,6 +1142,14 @@
 				5499CA971A2394B700783309 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		665E015124090591009C34E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				665E015224090591009C34E5 /* ScopeAgent.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		8F2892B421176E1200691D58 /* Metrics */ = {
@@ -1404,6 +1426,7 @@
 				D0D1211A19E87861005E4BAA /* swiftlint */,
 				D0D1216E19E87B05005E4BAA /* SwiftLintFramework */,
 				D0D1217B19E87B05005E4BAA /* SwiftLintFrameworkTests */,
+				665E015124090591009C34E5 /* Frameworks */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
@@ -1809,6 +1832,8 @@
 				D0D1217319E87B05005E4BAA /* Sources */,
 				D0D1217419E87B05005E4BAA /* Frameworks */,
 				3B12C9C01C3209C4000B423F /* Resources */,
+				665E0159240906C4009C34E5 /* ShellScript */,
+				665E015A2409082E009C34E5 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -1914,6 +1939,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		665E0159240906C4009C34E5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SRCROOT}/Carthage/Build/iOS/ScopeAgent.framework/upload_symbols\n";
+		};
 		6CCFCF321CFEF768003239EB /* Embed Swift libraries into SwiftLintFramework.framework */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2564,6 +2606,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6C27B5FC2079D33F00353E17 /* Mac-XCTest.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = "Tests/SwiftLintFrameworkTests/Supporting Files/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.realm.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = SwiftLintFrameworkTests;
@@ -2575,6 +2621,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6C27B5FC2079D33F00353E17 /* Mac-XCTest.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = "Tests/SwiftLintFrameworkTests/Supporting Files/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.realm.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = SwiftLintFrameworkTests;
@@ -2618,6 +2668,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6C27B5FC2079D33F00353E17 /* Mac-XCTest.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = "Tests/SwiftLintFrameworkTests/Supporting Files/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.realm.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = SwiftLintFrameworkTests;
@@ -2661,6 +2715,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6C27B5FC2079D33F00353E17 /* Mac-XCTest.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = "Tests/SwiftLintFrameworkTests/Supporting Files/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.realm.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = SwiftLintFrameworkTests;
