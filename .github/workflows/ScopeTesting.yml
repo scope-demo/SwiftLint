@@ -16,10 +16,7 @@ jobs:
       - name: Carthage Update
         run: carthage update --platform mac
       - name: Testing for macOS
-        run: |
-          set -o pipefail &&
-          xcodebuild -workspace SwiftLint.xcworkspace -scheme swiftlint test |
-          xcpretty -r junit -o build/reports/xcodebuild.xml
+        run: xcodebuild -workspace SwiftLint.xcworkspace -scheme swiftlint test
         env:
           SCOPE_DSN: ${{secrets.SCOPE_DSN}}
 
