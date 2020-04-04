@@ -1,4 +1,6 @@
-## Master
+## 0.39.2: Stay Home
+
+This is the last release to support building with Swift 5.0.x.
 
 This is the last release to support building with Swift 5.0.x.
 
