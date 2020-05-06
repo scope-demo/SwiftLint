@@ -24,7 +24,8 @@
 
 #### Bug Fixes
 
-* None.
+* Fix UnusedImportRule breaking transitive imports.  
+  [keith](https://github.com/keith)
 
 ## 0.39.2: Stay Home
 
