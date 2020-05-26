@@ -78,6 +78,11 @@
             isEnabled = "YES">
          </EnvironmentVariable>
          <EnvironmentVariable
+            key = "SCOPE_XCODE_DSN"
+            value = "$(SCOPE_XCODE_DSN)"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
             key = "SCOPE_COMMIT_SHA"
             value = "$(GITHUB_SHA)"
             isEnabled = "YES">
@@ -93,8 +98,23 @@
             isEnabled = "YES">
          </EnvironmentVariable>
          <EnvironmentVariable
-            key = "SCOPE_XCODE_DSN"
-            value = "$(SCOPE_XCODE_DSN)"
+            key = "GITHUB_REF"
+            value = "$(GITHUB_REF)"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "GITHUB_RUN_ID"
+            value = "$(GITHUB_RUN_ID)"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "SCOPE_INSTRUMENTATION_HTTP_PAYLOADS"
+            value = "YES"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "SCOPE_RUNNER_ENABLED"
+            value = "YES"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
